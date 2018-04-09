@@ -12,8 +12,6 @@ public class Main {
     public static void main(String[] args) throws Exception{
         Account acc = new Account();
         createJSON(acc);
-
-
     }
 
     public static void createJSON(Object ob) throws Exception{
@@ -78,11 +76,5 @@ public class Main {
         }
     }
 
-    public static String getTab(int count){
-        StringBuilder sb = new StringBuilder();
-        while(count>0){
-            sb.append("\t");
-        }
-        return sb.toString();
-    }
+
 }
