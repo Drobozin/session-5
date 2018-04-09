@@ -1,5 +1,6 @@
 package JSON;
 
+
 import javax.swing.text.html.HTMLDocument;
 import java.lang.reflect.Array;
 import java.lang.reflect.Field;
@@ -11,6 +12,7 @@ public class Main {
     public static void main(String[] args) throws Exception{
         Account acc = new Account();
         createJSON(acc);
+
 
     }
 
@@ -44,17 +46,23 @@ public class Main {
                     sb.append("\t\t").append(getFormattetValue(iter.next())).append(iter.hasNext()?",\n":"\n");
                 }
                 sb.append("\t]\n");
-            }else{
-                User user = (User)f.get(ob);
-
-
+            }else {
+                Field[] field = f.getType().getDeclaredFields();
+                sb.append(String.format("\t\"%s\": {\n", f.getName()));
+                for(Field f1 : field){
+                    f1.setAccessible(true);
+                    sb.append(String.format("\t\t\"%s\":", f1.getName()))
+                            .append(f1)
+                            .append("\n");
+                }
+                sb.append("\t}");
             }
         }
         sb.append("\n}");
         System.out.println(sb.toString());
     }
     public static String getFormattetValue(Field f, Object ob) throws Exception{
-
+        f.setAccessible(true);
         if (f.getType().equals(int.class) || f.getType().equals(double.class)) {
             return f.get(ob).toString();
         }else {
@@ -63,7 +71,6 @@ public class Main {
     }
 
     public static String getFormattetValue(Object ob) throws Exception{
-
         if (ob instanceof Number) {
             return ob.toString();
         }else {
@@ -79,5 +86,3 @@ public class Main {
         return sb.toString();
     }
 }
-
-
