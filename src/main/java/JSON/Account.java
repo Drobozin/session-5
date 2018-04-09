@@ -1,18 +1,19 @@
 package JSON;
 
 import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Account {
     private int id;
+    private User user;
+
     private double balance;
     private String[] arr;
     private List list;
     private Set set;
-    private User user;
+    private Date myDate;
+    private Calendar myCalendar;
+
 
     public Account() {
         id = 1;
@@ -25,6 +26,12 @@ public class Account {
         set = new HashSet();
         set.add(3);
         set.add("four");
+
+        myDate = new Date();
+        myCalendar = Calendar.getInstance();
+        myCalendar.setTime(myDate);
+
+
 
         user = new User("Ivanov Ivan Ivanonich", 25);
     }
