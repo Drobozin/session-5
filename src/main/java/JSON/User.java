@@ -8,10 +8,4 @@ public class User {
         this.fio = fio;
         this.age = age;
     }
-    public int getAge() {
-        return age;
-    }
-    public String getFio() {
-        return fio;
-    }
 }

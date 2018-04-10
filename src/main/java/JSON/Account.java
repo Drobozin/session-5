@@ -5,14 +5,17 @@ import java.util.*;
 
 public class Account {
     private int id;
-    private User user;
-
     private double balance;
     private String[] arr;
     private List list;
     private Set set;
     private Date myDate;
     private Calendar myCalendar;
+    private boolean logic;
+    private char ch;
+    private User user;
+    private String str;
+
 
 
     public Account() {
@@ -31,8 +34,12 @@ public class Account {
         myCalendar = Calendar.getInstance();
         myCalendar.setTime(myDate);
 
-
-
         user = new User("Ivanov Ivan Ivanonich", 25);
+
+        logic = false;
+
+        ch = '1';
+
+        str = "example";
     }
 }
