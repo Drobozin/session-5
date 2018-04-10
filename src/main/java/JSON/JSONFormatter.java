@@ -1,6 +1,5 @@
 package JSON;
 
-import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -20,7 +19,7 @@ public class JSONFormatter {
         addSimpleType(boolean.class);
         addSimpleType(double.class);
         Account acc = new Account();
-        JSONFormatter jf = new JSONFormatter();
+        new JSONFormatter();
         createJSON(acc);
         System.out.println(getSb());
     }
@@ -30,7 +29,6 @@ public class JSONFormatter {
         fillJSON(ob);
         sb.append("\n}");
     }
-
 
     private static void fillJSON(Object ob) throws Exception{
         Field[] fields = ob.getClass().getDeclaredFields();
@@ -74,7 +72,6 @@ public class JSONFormatter {
                   tabCounter--;
                   sb.append(getTabs(tabCounter)).append("}\n");
               }
-
         }
     }
 
