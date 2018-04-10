@@ -21,8 +21,8 @@ public class JSONFormatter {
         addSimpleType(double.class);
         Account acc = new Account();
         JSONFormatter jf = new JSONFormatter();
-        jf.createJSON(acc);
-        System.out.println(jf.getSb());
+        createJSON(acc);
+        System.out.println(getSb());
     }
 
     public static void createJSON(Object ob) throws Exception{
