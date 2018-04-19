@@ -1,6 +1,7 @@
-package JSON;
+package data;
 
-import java.lang.reflect.Field;
+import data.User;
+
 import java.util.*;
 
 public class Account {
