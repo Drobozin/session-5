@@ -1,6 +1,4 @@
-package data;
-
-import data.User;
+package problem2.data;
 
 import java.util.*;
 

@@ -1,9 +1,8 @@
-package logic;
+package problem2.logic;
 
-import JSON.JSONFormatter;
-import JSON.JSONTypeFormatter;
+import problem2.JSON.JSONFormatter;
+import problem2.JSON.JSONTypeFormatter;
 
-import java.lang.reflect.Field;
 import java.util.Map;
 
 public class PrimitiveFormatter<T> implements JSONTypeFormatter<Object> {

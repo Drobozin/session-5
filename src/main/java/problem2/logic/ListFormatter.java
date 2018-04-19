@@ -1,7 +1,7 @@
-package logic;
+package problem2.logic;
 
-import JSON.JSONFormatter;
-import JSON.JSONTypeFormatter;
+import problem2.JSON.JSONFormatter;
+import problem2.JSON.JSONTypeFormatter;
 
 import java.util.List;
 import java.util.Map;

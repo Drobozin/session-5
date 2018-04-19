@@ -1,11 +1,11 @@
-package JSON;
+package problem2.JSON;
 
 public interface JSONFormatter {
     /**
-     * Marshall object to JSON string.
+     * Marshall object to problem2.JSON string.
      *
      * @param obj Any object.
-     * @return String in JSON format.
+     * @return String in problem2.JSON format.
      */
     String marshall(Object obj);
 

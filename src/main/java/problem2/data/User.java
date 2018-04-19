@@ -1,4 +1,4 @@
-package data;
+package problem2.data;
 
 
 public class User {

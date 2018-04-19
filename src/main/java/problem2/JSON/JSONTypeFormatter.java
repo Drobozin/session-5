@@ -1,4 +1,4 @@
-package JSON;
+package problem2.JSON;
 
 
 import java.util.Map;

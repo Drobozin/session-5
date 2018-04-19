@@ -1,6 +1,6 @@
-package JSON;
+package problem2.JSON;
 
-import logic.*;
+import problem2.logic.*;
 
 import java.lang.reflect.Array;
 import java.util.*;

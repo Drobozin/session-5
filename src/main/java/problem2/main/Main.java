@@ -1,10 +1,9 @@
-package main;
+package problem2.main;
 
-import JSON.JSONFormatterImpl;
-import JSON.JSONTypeFormatter;
-import data.Account;
-import logic.PrimitiveFormatter;
-import java.math.BigDecimal;
+import problem2.JSON.JSONFormatterImpl;
+import problem2.JSON.JSONTypeFormatter;
+import problem2.data.Account;
+import problem2.logic.PrimitiveFormatter;
 
 public class Main {
 
